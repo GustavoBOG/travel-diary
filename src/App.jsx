@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
-import Home from './routes/Home/Home'
-import Login from './routes/Login/Login'
+import Home from './Routes/Home/Home'
+import Login from './Routes/Login/Login'
 import Header from './Routes/Header/Header'
 import Register from './Routes/Register/Register'
 import './App.css'
