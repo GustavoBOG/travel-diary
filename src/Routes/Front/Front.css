@@ -1,5 +1,6 @@
 .front-container {
   height: 100vh;
+  width: 100vw;
   background-image: url("../../assets/fondo.png");
   background-size: cover;
   background-position: center;
@@ -7,15 +8,16 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
 
 }
 
 .box{
   border: 2px solid black;
   border-radius: 80px ;
-  width: 150px;
-  height: 150px;
-  position: relative;
+  width: 7%;
+  height: 14%;
+  position: absolute;
   overflow: hidden;
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -28,21 +30,22 @@
   object-fit: cover;
 }
 .box:nth-child(1){
-  top: 50px;
-  left: -180px;
+  left: 28%;
+  top: 48%;
   border-radius: 80px 80px 80px 0;
   animation-name: slideInFromLeft;
   animation-delay: 0.5s; 
 }
 .box:nth-child(2){
-  top: -250px;
-  left: -190px;
+  top: 15%;
+  right: 55%;
   border-radius: 80px 80px 0px  80px;
   animation-name: slideInFromBottom;
   animation-delay: 1s;
 }
 .box:nth-child(3){
-  left: 350px;
+  bottom: 35%;
+  right: 15%;
   border-radius: 0px 80px 80px 80px;
   animation-name: slideInFromRight;
   animation-delay: 1.5s;
