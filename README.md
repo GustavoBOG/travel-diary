@@ -1,0 +1,2 @@
+- Botón añadir nueva entrada
+- que los estilos 

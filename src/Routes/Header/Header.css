@@ -1,0 +1,36 @@
+#head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: steelblue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+#head a {
+  text-decoration: none;
+  color: white; 
+  font-size: 28px; 
+  margin: 0 15px;
+  transition: transform 0.3s ease;
+}
+
+#head a:hover {
+  color: rgb(38, 84, 129);
+  transform: scale(1.1);
+}
+
+#head h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+#head img {
+  width: 90px;
+  margin: 0;
+}
