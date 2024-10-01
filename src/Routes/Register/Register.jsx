@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, Navigate } from "react-router-dom";
 import { useUser } from "../../UserContext";
+import "./Register.css";
 
 function Register() {
     const [user, setUser] = useUser();
@@ -39,43 +40,45 @@ function Register() {
     }
 
     return (
-        <div id="login" className="page">
+        <div id="register" className="page">
             <h1>Registrate</h1>
-            <form onSubmit={handleSubmit}>
+            <form className="register" onSubmit={handleSubmit}>
+                <div className="inline">
                 <label>
-                    <span>Nombre: </span>
                     <input
+                        placeholder="Nombre..."
                         name="firstName"
                         value={firstName}
                         onChange={(e) => setFirstName(e.target.value)}
                     />
                 </label>
                 <label>
-                    <span>Apellido: </span>
                     <input
+                        placeholder="Apellido..."
                         name="lastName"
                         value={lastName}
                         onChange={(e) => setLastName(e.target.value)}
                     />
                 </label>
+                </div>
                 <label>
-                    <span>Email: </span>
                     <input
+                        placeholder="Correo electrónico..."
                         name="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
                 </label>
                 <label>
-                    <span>Contraseña:</span>
                     <input
+                        placeholder="Contraseña..."
                         name="password"
                         type="password"
                         value={password}
                         onChange={(e) => setPassword(e.target.value)}
                     />
                 </label>
-                <button className="entrar">Enviar</button>
+                <button id="btnreg" className="btnregister">Enviar</button>
                 {error && <p>{error}</p>}
             </form>
         </div>

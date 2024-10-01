@@ -57,7 +57,7 @@ function Login() {
                 <button className="entrar">Entrar</button>
                 <p>¿todavia no tienes cuenta?</p>
                 
-                <Link className="register" to='/register'>Crear nueva cuenta</Link>
+                <Link className="btnregister" to='/register'>Crear nueva cuenta</Link>
                 
                 {error && <p>{error}</p>}
             </form>
