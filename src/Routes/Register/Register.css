@@ -1,0 +1,42 @@
+#register.page {
+    background-color: #f0f8ff;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.register label{
+    display: flex;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inline label{
+    flex: 1;
+    margin-right: 10px;
+}
+
+.inline label:last-child {
+    margin-right: 0;
+}
+
+#btnreg{
+    width: 100%;
+}
+btnreg:focus {
+    outline: none;
+}

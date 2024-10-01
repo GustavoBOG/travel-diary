@@ -79,7 +79,7 @@ p {
     margin-top: 10px;
 }
 
-.register {
+.btnregister {
     display: block;
     width: 90%;
     padding: 12px;
@@ -94,6 +94,6 @@ p {
     cursor: pointer;
 }
 
-.register:hover{
+.btnregister:hover{
     background-color: #278714;
 }
