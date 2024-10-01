@@ -5,9 +5,11 @@ import { useUser } from "../UserContext"
 function useFetch(url) {
   const [user] = useUser()
   const [content, setContent] = useState(null)
+// console.log(JSON.stringify(user));
 
   const headers = {}
   if (user?.token) headers.Authorization = user?.token
+// console.log("headers", headers);
 
   useEffect(() => {
     fetch(url, { headers })

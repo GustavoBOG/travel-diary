@@ -1,7 +1,7 @@
 import Carousel from "../Carousel/Carousel";
-import "./Front.css";
+import "./Portada.css";
 
-function Front() {
+function Portada() {
   return (
     <div className="front-container">
       <div className="box">
@@ -20,4 +20,4 @@ function Front() {
   );
 }
 
-export default Front;
+export default Portada;

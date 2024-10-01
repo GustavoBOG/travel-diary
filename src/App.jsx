@@ -1,11 +1,11 @@
 import { Route, Routes } from 'react-router-dom'
-import Home from './Routes/Home/Home'
-import Login from './Routes/Login/Login'
 import Header from './Routes/Header/Header'
 import Register from './Routes/Register/Register'
+import NewEntrie from './Routes/NewEntrie/NewEntrie'
+import Home from './Routes/Home/Home'
+import Login from './Routes/Login/Login'
 import './App.css'
-import Front from './Routes/Front/Front'
-
+import Profile from './Routes/Profile/Profile'
 
 function App() {
 
@@ -15,10 +15,11 @@ function App() {
     <Header/>
       <Routes>
         
-        <Route path="/" element={<Front />} />
-        <Route path="home" element={<Home />}/>
+        <Route path="/" element={<Home />}/>
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
+        <Route path="entries/new" element={<NewEntrie />}/>
+        <Route path="/users" element={<Profile />}/>
 
       </Routes>
     </>
